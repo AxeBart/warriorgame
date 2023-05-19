@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <script src="./src/phaser.min.js"></script>
+        <style>
+            *{
+                margin: 0; padding: 0;
+                background-color: black;
+            }
+            .hidden{
+                display: none;
+                /* transition: 0.3s; */
+            }
+            .container{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                /* z-index: 1; */
+                background-color: rgb(0, 0, 0);
+            }
+            .menu{
+                background-color: rgb(0, 0, 0);
+                text-align: center;
+                margin: auto;
+                margin-top: 10%;
+                width: 40%;  
+                border-radius: 5px;              
+            }
+            button{
+                top: auto;
+                margin: 5px;
+                padding: 10px;
+                text-align: center;
+                border: none;
+                color: aliceblue;
+                background-color: rgb(25, 101, 76);
+                border-radius: 5px; 
+            }
+            button:hover{
+                background-color: rgb(58, 149, 118);
+                
+            }
+            span{
+                color: greenyellow;
+            }
+            /* canvas{
+                display: none;
+            } */
+        </style>
+    </head>
+    <body id="body">
+        <div class="container hidden">
+            <!-- <div class="menu">
+                <br>
+                <button onclick="document.querySelector('canvas').className = ''; document.querySelector('div').className = 'hidden'; ">Retour</button><br><br>
+                <button onclick="save()">Save</button><span class="hidden">Enregistré</span><br><br>
+                <button onclick="Neutralino.app.exit()">Quit</button><br><br>
+            </div> -->
+        </div>
+        <!-- <script src="./js/neutralino.js"></script> -->
+        <script type="" src="./src/app.js"></script>
+        <script>
+            // async function save() {
+            //     let a = await Neutralino.filesystem.readFile("saves.json")
+
+            //     console.log(a)
+            //     let obj = {
+            //         posX : player.x,
+            //         posY : player.y
+            //     }
+
+
+            //     console.log(obj)
+            //     await Neutralino.filesystem.writeFile("saves.json", JSON.stringify(obj))
+            // }
+        </script>
+    </body>
+</html>
